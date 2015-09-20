@@ -35,10 +35,20 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# devise authenication for rails based on warden, rack based, mvc, modular (use only what you need, or the whole gem)
+# rails g devise:install
+# rails g devise:views
+# rails g devise Hacker
+# rake db:migrate
+gem 'devise'
 
 group :development, :test do
   gem 'better_errors'
   gem 'capybara-webkit'
+  # make versitale factories to use in tests when making object instances, automatically creates std factory when rails g model 
+  # https://github.com/thoughtbot/factory_girl
+  gem 'factory_girl_rails'
+  # faster than faker, g fake data, names address, phone... https://github.com/ffaker/ffaker
   gem 'ffaker'
   # keeps db clean for capybara-webkit running app seperatly from rspec https://github.com/thoughtbot/capybara-webkit
   gem 'database_cleaner'
@@ -57,4 +67,3 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   # gem 'byebug'
 end
-
