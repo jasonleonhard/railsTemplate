@@ -49,6 +49,7 @@ group :development, :test do
   # https://github.com/thoughtbot/factory_girl
   gem 'factory_girl_rails'
   # faster than faker, g fake data, names address, phone... https://github.com/ffaker/ffaker
+  # example of using both factory_girl_rails and ffaker simutaniously in /spec/factories/hackers.rb
   gem 'ffaker'
   # keeps db clean for capybara-webkit running app seperatly from rspec https://github.com/thoughtbot/capybara-webkit
   gem 'database_cleaner'
@@ -58,6 +59,7 @@ group :development, :test do
   gem 'pry'
   gem 'pry-nav'
   gem 'pry-rails', '~> 0.3.2'
+  # behavior driven development language syntax, more declariative tests, clearly communicating tests, and reuse improvement
   gem 'simple_bdd'
   gem 'shoulda-matchers'  
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
