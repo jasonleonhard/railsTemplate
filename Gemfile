@@ -40,8 +40,10 @@ group :development, :test do
   gem 'better_errors'
   gem 'capybara-webkit'
   gem 'ffaker'
+  # keeps db clean for capybara-webkit running app seperatly from rspec https://github.com/thoughtbot/capybara-webkit
   gem 'database_cleaner'
   gem 'letter_opener'
+  # https://github.com/rspec/rspec-rails
   gem 'rspec-rails'
   gem 'pry'
   gem 'pry-nav'
